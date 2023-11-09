@@ -1,0 +1,8 @@
+services:
+  app:
+    container_name: test-zsh-env
+    build: .
+    tty: true
+    volumes:
+      - .:/workspace
+      - ./starship.toml:/root/.config/starship.toml
